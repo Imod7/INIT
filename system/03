@@ -1,0 +1,5 @@
+We have to open the file /etc/hostname and change the name we find there
+to the new name we want to give to our server
+We save and close the file
+We also need to edit the file /etc/hosts
+and replace the old name with the new name we chose for our server

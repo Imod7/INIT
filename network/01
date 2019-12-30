@@ -1,0 +1,1 @@
+netstat -i | sed 's/|/ /' | awk '{print $1}'
