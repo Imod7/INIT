@@ -1,0 +1,11 @@
+In the graphic session :
+- I will go back to the desktop, then click on Menu and then click on Logout button and again Log Out
+- In the next screen, I will be asked to enter the credentials of the new user so I will enter the username and password of the new user.
+- And I login as the new user
+
+In ssh session :
+- In the terminal if I am connected as a user and then as root, I will have to enter the exit command twice
+- If I am connected as a user then I enter the exit command once
+- Then to login I give the command "ssh -p 2000 username@127.0.0.1" where I just replace the username with the username of my new user
+- I will be asked for the password which I enter
+- And then I am logged in

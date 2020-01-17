@@ -1,0 +1,2 @@
+The device that makes the link between my computer (local network) and the outside world is called a gateway. To get the name and IP address of our gateway, we just have to look which is the first hop in the traceroute we did in the previous question. 
+From the output of the previous command we see that at the first hop is the IP address 10.11.1.254 which is the default gateway. The name is again set as the IP address and in parenthesis the IP address.

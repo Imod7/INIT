@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo killall -u [username] && sudo deluser --remove-home -f [username]

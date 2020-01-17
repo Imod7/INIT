@@ -1,0 +1,45 @@
+#!/bin/bash
+reset=`tput sgr0`
+red=`tput setaf 1`
+green=`tput setaf 2`
+yellow=`tput setaf 3`
+arr=(Aspen Breckenridge Avoriaz) 
+
+snow_destinations()
+{
+    echo "${yellow}Choose one of the following destinations :${reset}"
+    echo "0. Aspen (USA - Colorado)"
+    echo "1. Breckenridge (USA - Colorado)"
+    echo "2. Avoriaz (France)"
+    echo "3. Choose where is the best powder for meeeeee!!!"
+}
+echo "Hello, you crazy snowboarder!!! What is your name? "
+read name
+echo "Where would you like to snowboard, ${green}$name?${reset}"
+snow_destinations
+read location
+if [[ "$location" == 3 ]]; then
+    for i in "${arr[@]}"
+    do
+    : 
+        raw="curl https://www.snow-forecast.com/resorts/$i/6day/mid | awk '/light snow/{one=1}/snow showers/{two=1}/clear/{three=1}END{print (one+two+three==3)}'"
+        result=$(eval $raw 2>/dev/null)
+        result="${result##*$'\n'}"
+        # echo "'$result'"
+        if [ $result == 1 ]; then
+            echo "${green}Are you ready??? I didn't hear you ARE YOU READY??? Cause ${yellow}$i${green} is your destination! :D ${reset}"
+            break
+        fi
+    done
+else
+    echo "You selected ${yellow}${arr[$location]}${reset} for snowboard"
+    raw="curl https://www.snow-forecast.com/resorts/${arr[$location]}/6day/mid | awk '/light snow/{one=1}/snow showers/{two=1}/clear/{three=1}END{print (one+two+three==3)}'"
+    result=$(eval $raw 2>/dev/null)
+    result="${result##*$'\n'}"
+    # echo "'$result'"
+    if [ $result == 0 ]; then
+        echo "${red}Not a good week to go snowboard! Try again next week! ;)${reset}"
+    else
+        echo "${green}You are still here??? Pack and Goooo! :D ${reset}"
+    fi
+fi
