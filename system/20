@@ -1,1 +1,1 @@
-cat /etc/passwd
+getent passwd | cut -d ":" -f1

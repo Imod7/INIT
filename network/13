@@ -1,1 +1,8 @@
-f1r4s16.codam.nl
+I can use one of the following commands :
+- host [IP_output_from_12] | cut -d " " -f5 | sed 's/.$//'
+- dig -x [IP_output_from_12] | grep -A 1 "ANSWER SECTION" | awk 'NR==2{print $5}' | sed 's/.$//'
+- nslookup [IP_output_from_12] | grep '=' | cut -d " " -f3 | sed 's/.$//'
+
+And the output of one of the commands above will be the following :
+  f1r4s16.codam.nl
+which the name of our host

@@ -1,1 +1,1 @@
-netstat -i | sed 's/|/ /' | awk '{print $1}'
+ifconfig -l | tr " " "\n"

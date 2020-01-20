@@ -1,1 +1,4 @@
-cat /etc/issue
+We can find the installed version of Debian in the file debian_version which is located in the folder /etc/
+By using the following command on the terminal of our VM :
+cat /etc/debian_version
+we can see that the version of our Debian VM is 10.2

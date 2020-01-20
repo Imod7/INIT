@@ -1,1 +1,1 @@
-netstat -rn | grep '^default*' | grep 'en0' | awk '{print $2}'
+netstat -rn | grep '^default.*en0\|Gateway' | awk 'NR==1{a=$2}NR==2{print a,$2}'

@@ -1,5 +1,6 @@
-We have to open the file /etc/hostname and change the name we find there
-to the new name we want to give to our server
-We save and close the file
-We also need to edit the file /etc/hosts
-and replace the old name with the new name we chose for our server
+In order to change the name of our system permanently, we follow the below steps :
+- In terminal we change to root user
+- We edit the file /etc/hostname with the command "vi /etc/hostname" and we change the current name of the system to the new one
+- We save and close the file
+- We do the same to the file /etc/hosts
+- We run the command "hostnamectl set-hostname [new_system_name]"

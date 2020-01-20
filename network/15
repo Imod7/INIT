@@ -1,1 +1,6 @@
-I would edit the line in the /etc/hosts file that indicates the IP of intra.42.fr. I would change the Ip address to 46.19.122.85
+In order to make the intra.42.fr address reroute to 46.19.122.85, I would do the following steps :
+1) I would open the /etc/hosts file
+2) Go to the corresponding line where intra.42.fr (currently cdn.intra.42.fr) is mentioned
+3) On the left of the cdn.intra.42.fr I can see the IP 10.68.1.1 which I would change to 46.19.122.85 
+
+These are the steps I would follow if the file /etc/hosts was not readonly.
