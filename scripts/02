@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo killall -u dimitrakis && sudo deluser --remove-home -f dimitrakis
+sudo killall -u [username] && sudo deluser --remove-home -f [username]
