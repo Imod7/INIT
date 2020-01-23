@@ -4,8 +4,12 @@ In the graphic session :
 - And I login as the new user
 
 In ssh session :
+I have to first setup my VM in Settings > Network > Advanced by adding a Port Forward. I have to do that only once.
+Then to connect everytime I follow the below steps :
 - In the terminal if I am connected as a user and then as root, I will have to enter the exit command twice
 - If I am connected as a user then I enter the exit command once
 - Then to login I give the command "ssh -p 2000 username@127.0.0.1" where I just replace the username with the username of my new user
 - I will be asked for the password which I enter
 - And then I am logged in
+
+** Note the Port and Host IP that I give in my ssh command depend on what I set on my VM Settings.
