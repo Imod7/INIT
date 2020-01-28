@@ -1,4 +1,10 @@
-We can find the installed version of Debian in the file debian_version which is located in the folder /etc/
-By using the following command on the terminal of our VM :
+# We can find the installed version of Debian in the file debian_version which is located in the folder /etc/.
+# By using the following command on the terminal of our VM :
+
 cat /etc/debian_version
-we can see that the version of our Debian VM is 10.2
+
+# we can see that the version of our Debian VM is 10.2
+
+# Related information are located in the files os-release and issue in the same folder. We can use them accordingly with the following commands :
+# cat /etc/os-release
+# cat /etc/issue

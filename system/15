@@ -1,1 +1,4 @@
-kill [PID]
+pkill tail
+# With the above command we kill all processes with the name tail.
+
+# Related command is also kill [PID] but we have to first run another command to find the PID of ssh and then run the kill command.

@@ -1,1 +1,5 @@
-du -sh /var/*
+# Command that was suggested from pholster - Thanks Pepijn!
+# This commands shows the size of all subfolders in the var folder but also the size of the var folder itself.
+du -hd1 /var
+
+# The command du -sh /var/* can also be used but it does not display the size of the var folder, only the size of all subfolders.

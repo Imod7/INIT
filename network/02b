@@ -1,1 +1,5 @@
+# Command that was suggested from lgutter - thanx Liewe! 
+
 ping 10.11.255.255 -c 2 | cut -d ' ' -f 4 | sort -u | cut -d ':' -f 1 | grep -E "(\d\d?\d?\.\d\d?\d?\.\d\d?\d?\.\d\d?\d?)"
+
+# apr -a command is not the correct answer because it does not get all the IPs because it consults a cache. So first we need to ping the broadcast address and refresh/get all IPs and then print them.

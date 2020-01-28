@@ -1,2 +1,8 @@
 #!/bin/bash
-sudo killall -u [username] && sudo deluser --remove-home -f [username]
+echo "Which user would you like to delete?"
+read user
+if [[ -z "$user" ]]; then
+	echo "Please input a valid username"
+	exit
+fi
+sudo killall -u $user  && sudo deluser --remove-home -f $user
