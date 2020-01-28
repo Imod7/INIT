@@ -1,2 +1,2 @@
-The file /etc/resolv.conf is a configuration file that is used to configure DNS name servers.
+The file resolv.conf is a configuration file that is used to configure DNS name servers. It is located in the folder /etc.
 In this file is the IP address of the DNS server we are using.

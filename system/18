@@ -1,1 +1,5 @@
 killall sshd
+
+# The command "killall sshd" kills/closes all open ssh connections and also stops the ssh process. 
+
+# Related commands are also "sudo systemctl stop ssh" or "sudo service ssh stop" but these commands only stop the SSH process and prevent all new incoming ssh connections to be established. However, these commands do not kill all ssh connections that were made before the SSH was stopped.

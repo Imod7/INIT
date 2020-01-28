@@ -1,9 +1,9 @@
-I can run one of the following commands :
-- dig +short 42.fr
-- host 42.fr | grep "has address" | awk '{print $4}'
-- nslookup 42.fr | grep Address | grep -v "#" | awk '{print $2}'
+# I can run one of the following commands :
+# dig +short 42.fr
+# host 42.fr | grep "has address" | awk '{print $4}'
+# nslookup 42.fr | grep Address | grep -v "#" | awk '{print $2}'
 
-And the command output will be the 2 IP addresses below :
+# And the command output will be the 2 IP addresses below :
 163.172.250.13
 163.172.250.12
-which are the external/public IPs of 42.fr
+# which are the external/public IPs of 42.fr

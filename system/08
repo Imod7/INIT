@@ -1,1 +1,2 @@
 On the remote server, the RSA keys are within the user’s home directory at ~/.ssh/authorized_keys. This file contains a list of public keys, one-per-line, that are authorized to log into this account.
+We can also check that this is the correct file by opening the SSH daemon configuration file called "sshd_config" located in the path /etc/ssh.

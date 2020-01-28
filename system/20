@@ -1,1 +1,3 @@
 getent passwd | cut -d ":" -f1
+
+# We could also use this command "cat /etc/passwd | cut -d ':' -f1" to get all existing users.

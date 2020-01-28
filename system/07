@@ -1,1 +1,7 @@
 cat /var/run/sshd.pid
+
+# sshd will typically write a PID file which by default is located at /var/run/sshd.pid. In this file you can find the process ID of the listening sshd process.
+
+# Other commands that we could use to get the PID of the SSHD service are the following :
+# ps aux | grep -e /usr/sbin/sshd | grep -v grep | tr -s " " | cut -d " " -f2
+# systemctl status ssh | grep 'Main PID' | cut -d ' ' -f4

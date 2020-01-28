@@ -9,6 +9,6 @@ ns-1236.awsdns-26.org
 ns-144.awsdns-18.com
 which are the Name Servers of the domain name slash16.org.
 
-Then I go to a web browser and open a DNS Lookup website of my choice, like mxtoolbox.com/DNSLookup.aspx. There, I insert one of the IPs from the command output and the result will show me a message like the following :
+From this result, I can see that the provider is awsdns and aws stands for Amazon Web Services. But if I am not sure, I can also go to a web browser and open a DNS Lookup website of my choice, like mxtoolbox.com/DNSLookup.aspx. There, I insert one of the name servers from the command output and the result will show me a message like the following :
    Your DNS hosting provider is "Amazon Route 53"
-This message tells us that the provider of slash16.org is Amazon.
+So from this meesage again I can confirm that the provider of slash16.org is Amazon.

@@ -1,1 +1,1 @@
-ssh -p 2000 domi@127.0.0.1
+ssh -p [Host_Port_Number] [Username]@[Host_IP]

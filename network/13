@@ -1,8 +1,11 @@
-I can use one of the following commands :
-- host [IP_output_from_12] | cut -d " " -f5 | sed 's/.$//'
-- dig -x [IP_output_from_12] | grep -A 1 "ANSWER SECTION" | awk 'NR==2{print $5}' | sed 's/.$//'
-- nslookup [IP_output_from_12] | grep '=' | cut -d " " -f3 | sed 's/.$//'
+# I can use one of the following commands :
+# host [IP_output_from_12] | cut -d " " -f5 | sed 's/.$//'
+# dig -x [IP_output_from_12] | grep -A 1 "ANSWER SECTION" | awk 'NR==2{print $5}' | sed 's/.$//'
+# nslookup [IP_output_from_12] | grep '=' | cut -d " " -f3 | sed 's/.$//'
 
-And the output of one of the commands above will be the following :
+# And the output of one of the commands above will be the following :
   f1r4s16.codam.nl
-which the name of our host
+# which is the name of our host.
+
+# Also, instead of running first the previous command to get the result and use it in the current command, I can also make one command to run everything at once (with the help of xargs) as shown below :
+# ifconfig en0 | grep "inet " | cut -d " " -f2 | xargs -J % host % | cut -d " " -f5 | sed 's/.$//' 

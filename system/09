@@ -1,1 +1,5 @@
 w
+
+# The command 'w' is used to show logged-in usernames and what they are doing.
+
+# We can also use the command 'who' which is used to get the list of the usernames who are currently logged in, their tty number, date and time and machine address.

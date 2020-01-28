@@ -1,1 +1,1 @@
-arp -a | awk '{print $2}' | sed 's/[( )]//g'
+ping 10.11.255.255 -c 2 | cut -d ' ' -f 4 | sort -u | cut -d ':' -f 1 | grep -E "(\d\d?\d?\.\d\d?\d?\.\d\d?\d?\.\d\d?\d?)"
